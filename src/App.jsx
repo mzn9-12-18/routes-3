@@ -1,21 +1,26 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router';
 
+import Layout from "./components/Layout";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Products from "./pages/Products";
-import ProductDetail from "./pages/ProductDetail";
-import Navbar from "./components/Navbar";
+import Explorar from "./pages/Explorar";
+import Categorias from "./pages/Categorias";
+import Detalle from "./pages/Detalle";
+import Sobre from "./pages/Sobre";
+import NotFound from "./pages/NotFound";
+
 
 function App() {
   return (
     <>
-      <Navbar />
-
       <Routes>
+        <Route element= {<Layout />} >
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<ProductDetail />} />
+        <Route path="/explorar" element={<Explorar />} />
+        <Route path="/categorias" element={<Categorias />} />
+        <Route path="/contenido/:id" element={<Detalle />} />
+        <Route path="/sobre" element={<Sobre />} />
+         <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
     </>
   );

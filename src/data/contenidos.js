@@ -56,7 +56,7 @@ const contenidos = [
     descripcion:
       "El mate es una de las expresiones culturales más representativas de Argentina y forma parte de la vida cotidiana.",
     autor: "Cultura Conectada",
-    imagen: "https://images.unsplash.com/photo-1594719690189-2c5d6f8e3b8a",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFZ0OEWur2eV45gLi1iZ1fTSOS2Ynh4uIgiWAJJycVfQ&s=10",
     anio: 2026,
   },
 ];
